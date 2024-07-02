@@ -29,7 +29,7 @@ function App() {
           <div className="row justify-content-center">
             <div className="col-6 col-sm-6 col-md-6 col-lg-6">
               <div className="logo">
-              <Link to="./home">   <img src="./image/logo.png" alt="logo"  /></Link>
+              <Link to="/home">   <img src="./image/logo.png" alt="logo"  /></Link>
              
               </div>
             </div>

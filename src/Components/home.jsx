@@ -2,6 +2,7 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './homeStyle.css';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -13,7 +14,7 @@ function Home() {
         <div className="container">
           <div className="row">
             <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <a href="/in-Play">
+              <Link to="/in-Play">
                 <div className="sec_desbord_card">
                   <div className="sec_desbord_tx">
                     <p>In Play</p>
@@ -22,10 +23,10 @@ function Home() {
                     <img src="./image/cricet.svg" alt="" />
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <a href="/profile">
+              <Link to="/profile">
                 <div className="sec_desbord_card">
                   <div className="sec_desbord_tx">
                     <p>Profile</p>
@@ -34,10 +35,10 @@ function Home() {
                     <img src="./image/profile.svg" alt="" />
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <a href="/statement">
+              <Link to="/statement">
                 <div className="sec_desbord_card">
                   <div className="sec_desbord_tx">
                     <p>Statement</p>
@@ -46,10 +47,10 @@ function Home() {
                     <img src="./image/statement.svg" alt="" />
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <a href="/completed-games">
+              <Link to="/completed-games">
                 <div className="sec_desbord_card">
                   <div className="sec_desbord_tx">
                     <p>Completed Games</p>
@@ -58,10 +59,10 @@ function Home() {
                     <img src="./image/complete-games.svg" alt="" />
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <a href="/my-ledger">
+              <Link to="/my-ledger">
                 <div className="sec_desbord_card">
                   <div className="sec_desbord_tx">
                     <p>My ledger</p>
@@ -70,10 +71,10 @@ function Home() {
                     <img src="./image/ledger.svg" alt="" />
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <a href="/games">
+              <Link to="/games">
                 <div className="sec_desbord_card">
                   <div className="sec_desbord_tx">
                     <p>Games</p>
@@ -82,10 +83,10 @@ function Home() {
                     <img src="./image/casino.svg" alt="" />
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <a href="/rules">
+              <Link to="/rules">
                 <div className="sec_desbord_card">
                   <div className="sec_desbord_tx">
                     <p>Rules</p>
@@ -94,10 +95,10 @@ function Home() {
                     <img src="./image/rules.svg" alt="" />
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <a href="/change-password">
+              <Link to="/change-password">
                 <div className="sec_desbord_card">
                   <div className="sec_desbord_tx">
                     <p>Change Password</p>
@@ -106,10 +107,10 @@ function Home() {
                     <img src="./image/password.svg" alt="" />
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <a href="/manual-games">
+              <Link to="/manual-games">
                 <div className="sec_desbord_card">
                   <div className="sec_desbord_tx">
                     <p>Manual Games </p>
@@ -118,7 +119,7 @@ function Home() {
                     <img src="./image/manualgames.svg" alt="" />
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
