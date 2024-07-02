@@ -1,0 +1,37 @@
+.video-container {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  
+  .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .video-container {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .video-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .video-container:hover img {
+    transform: scale(1.1);
+  }
+  
+  .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }

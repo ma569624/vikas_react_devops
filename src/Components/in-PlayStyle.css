@@ -1,0 +1,99 @@
+/* General styles */
+
+  
+ 
+  /* Section layout */
+  section {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0rem auto 1rem;
+    padding: 0 1rem;
+}
+  
+  /* Article styles */
+  article {
+    margin: 0;
+  }
+  
+  article img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+  }
+  
+  article h2 {
+    color: oklch(25% 0.104 146.51);
+    font-size: clamp(0.75rem, 4vw, 1rem); /* Responsive font size */
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    line-height: 1.1;
+    margin: clamp(0.125rem, 2vw, 0.375rem) 0;
+  }
+  
+  article .categories {
+    border-radius: 0.25rem;
+    font-size: clamp(0.4rem, 2.5vw, 0.625rem); /* Responsive font size */
+    letter-spacing: 0.15em;
+    line-height: 1;
+    margin: 0;
+    padding: clamp(0.125rem, 1.5vw, 0.25rem); /* Responsive padding */
+    font-variant: small-caps;
+  }
+  .hero_area__topslider-card {
+    border-radius: 8px;
+    border: 1px solid rgb(255 255 255 / 17%);
+    transition: .4s linear;
+    background: #000;
+    margin-bottom: 20px;
+}
+.n5-color {
+  color: rgba(var(--n5), 1);
+}
+.hero_area__topslider-vs {
+  padding: 10px 9px;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8898aa;
+}
+.p2-bg{
+  background-color: #FF1616;
+}
+.hero_area__topslider-cardbody h6{
+  color: #fff;
+}
+.n5-color{
+  color: #fff;
+}
+.fs-eight{
+  color: #fff;
+}
+.fs-eight {
+    font-size: 12px;
+    line-height: 130%;
+}
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    section {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    article h2 {
+      font-size: clamp(0.75rem, 6vw, 1rem); /* Adjust font size for smaller screens */
+    }
+  
+    article .categories {
+      font-size: clamp(0.4rem, 4vw, 0.625rem); /* Adjust font size for smaller screens */
+      padding: clamp(0.125rem, 2vw, 0.25rem); /* Adjust padding for smaller screens */
+    }
+  }
+  
+
+  
