@@ -3,6 +3,7 @@ import './in-PlayStyle.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
+import Header from './header';
 
 const ChangePassword = () => {
     const [oldPassword, setOldPassword] = useState('');
@@ -32,7 +33,9 @@ const ChangePassword = () => {
     };
 
     return (
-        <Container>
+        <>
+        <Header />
+        <Container className='changeForm'>
             <Row className="justify-content-md-center">
                 <Col md={6}>
                     <h2>Change Password</h2>
@@ -75,6 +78,7 @@ const ChangePassword = () => {
                 </Col>
             </Row>
         </Container>
+        </>
     );
 };
 

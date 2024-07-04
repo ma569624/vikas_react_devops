@@ -162,7 +162,12 @@ a.google span{
     opacity: 0.6;
     color: #232836;
 }
-
+.bt-bg button{
+    background:  hsl(343.59deg 73.56% 34.12%);
+}
+.form_sec form {
+    background: #fff;
+}
 @media screen and (max-width: 400px) {
     .form{
         padding: 20px 10px;

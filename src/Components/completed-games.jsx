@@ -1,13 +1,15 @@
 import React from 'react';
-import './in-PlayStyle.css';
+// import './in-PlayStyle.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Header from './header'
 
 
 
 const YourComponent = ({ date, time, team1, team1Img, team2, team2Img, winner, loss }) => {
   return (
-    <div className="col-sm-12 col-md-6 col-lg-6">
+    <>
+    <Header />
+    <div className="col-sm-12 col-md-6 col-lg-6 ">
      <a href="/match">
       <div className="hero_area__topslider-card swiper-slide p-4 p-md-6">
         <div className="hero_area__topslider-cardtop d-flex align-items-center justify-content-between mb-4 mb-md-6">
@@ -47,6 +49,7 @@ const YourComponent = ({ date, time, team1, team1Img, team2, team2Img, winner, l
       </div>
       </a>
     </div>
+    </>
   );
 };
 
@@ -85,7 +88,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="hero_area__main">
+    <section className="hero_area__main gameMatch">
       <div className="container">
         <div className="row">
           {matches.map((match, index) => (
@@ -94,7 +97,7 @@ const HeroSection = () => {
         </div>
         <div className="mt-4">
         <div className="d-flex justify-content-center">
-          <a href="/home" className="btn btn-primary btn-lg w-100" style={{ backgroundColor: '#ff1616', borderColor: '#ff1616' }}>Back to Main Menu</a>
+          <a href="/index" className="btn btn-primary btn-lg w-100" style={{ backgroundColor: '#ff1616', borderColor: '#ff1616' }}>Back to Main Menu</a>
         </div>
       </div>
       </div>

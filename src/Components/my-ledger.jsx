@@ -4,6 +4,8 @@ import { GrFormPrevious } from "react-icons/gr";
 import { MdNavigateNext } from "react-icons/md";
 import './statementStyle.css';
 
+import Header from './header';
+
 const AccountStatement = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const rowsPerPage = 2;
@@ -60,7 +62,9 @@ const AccountStatement = () => {
   const currentRows = tableData.slice(indexOfFirstRow, indexOfLastRow);
 
   return (
-    <div className="container mt-4">
+    <>
+    <Header />
+    <div className="container myLedger">
       <div className="row mt-5">
         <div className="col">
           <div className="card bg-default shadow">
@@ -144,10 +148,11 @@ const AccountStatement = () => {
       </div>
       <div className="mt-4">
         <div className="d-flex justify-content-center">
-          <a href="/home" className="btn btn-primary btn-lg w-100" style={{ backgroundColor: '#ff1616', borderColor: '#ff1616' }}>Back to Main Menu</a>
+          <a href="/index" className="btn btn-primary btn-lg w-100" style={{ backgroundColor: '#ff1616', borderColor: '#ff1616' }}>Back to Main Menu</a>
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -1,131 +1,47 @@
-import React from 'react';
-// import { Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './in-PlayStyle.css';
 import './homeStyle.css';
-import { Link } from 'react-router-dom';
 
-function Home() {
-    return (
-        <div>
-            {/* Required meta tags and Bootstrap CSS are usually included in the public/index.html file */}
-     
+const LoginForm = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const navigate = useNavigate();
 
-      <section className="desbord">
-        <div className="container">
-          <div className="row">
-            <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <Link to="/in-Play">
-                <div className="sec_desbord_card">
-                  <div className="sec_desbord_tx">
-                    <p>In Play</p>
-                  </div>
-                  <div className="sec_desbord_img">
-                    <img src="./image/cricet.svg" alt="" />
-                  </div>
-                </div>
-              </Link>
-            </div>
-            <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <Link to="/profile">
-                <div className="sec_desbord_card">
-                  <div className="sec_desbord_tx">
-                    <p>Profile</p>
-                  </div>
-                  <div className="sec_desbord_img">
-                    <img src="./image/profile.svg" alt="" />
-                  </div>
-                </div>
-              </Link>
-            </div>
-            <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <Link to="/statement">
-                <div className="sec_desbord_card">
-                  <div className="sec_desbord_tx">
-                    <p>Statement</p>
-                  </div>
-                  <div className="sec_desbord_img">
-                    <img src="./image/statement.svg" alt="" />
-                  </div>
-                </div>
-              </Link>
-            </div>
-            <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <Link to="/completed-games">
-                <div className="sec_desbord_card">
-                  <div className="sec_desbord_tx">
-                    <p>Completed Games</p>
-                  </div>
-                  <div className="sec_desbord_img">
-                    <img src="./image/complete-games.svg" alt="" />
-                  </div>
-                </div>
-              </Link>
-            </div>
-            <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <Link to="/my-ledger">
-                <div className="sec_desbord_card">
-                  <div className="sec_desbord_tx">
-                    <p>My ledger</p>
-                  </div>
-                  <div className="sec_desbord_img">
-                    <img src="./image/ledger.svg" alt="" />
-                  </div>
-                </div>
-              </Link>
-            </div>
-            <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <Link to="/games">
-                <div className="sec_desbord_card">
-                  <div className="sec_desbord_tx">
-                    <p>Games</p>
-                  </div>
-                  <div className="sec_desbord_img">
-                    <img src="./image/casino.svg" alt="" />
-                  </div>
-                </div>
-              </Link>
-            </div>
-            <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <Link to="/rules">
-                <div className="sec_desbord_card">
-                  <div className="sec_desbord_tx">
-                    <p>Rules</p>
-                  </div>
-                  <div className="sec_desbord_img">
-                    <img src="./image/rules.svg" alt="" />
-                  </div>
-                </div>
-              </Link>
-            </div>
-            <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <Link to="/change-password">
-                <div className="sec_desbord_card">
-                  <div className="sec_desbord_tx">
-                    <p>Change Password</p>
-                  </div>
-                  <div className="sec_desbord_img">
-                    <img src="./image/password.svg" alt="" />
-                  </div>
-                </div>
-              </Link>
-            </div>
-            <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <Link to="/manual-games">
-                <div className="sec_desbord_card">
-                  <div className="sec_desbord_tx">
-                    <p>Manual Games </p>
-                  </div>
-                  <div className="sec_desbord_img">
-                    <img src="./image/manualgames.svg" alt="" />
-                  </div>
-                </div>
-              </Link>
-            </div>
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Simulated login logic (replace with actual logic)
+    setIsLoggedIn(true);
+    // Validate form inputs and if valid, navigate
+    navigate('/index');
+  };
+
+  return (
+    <section className="hero_area__main form_sec formm-sec">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-md-6">
+            <form onSubmit={handleSubmit} className="p-4 p-md-6 border rounded-3">
+              <div className="logo logos justify-content-center">
+                <img src="./image/logo.png" alt="Logo" />
+              </div>
+              <h2 className="mb-4 text-center">Login</h2>
+              <div className="mb-3">
+                <label htmlFor="userId" className="form-label">User ID</label>
+                <input type="text" id="userId" name="userId" className="form-control" required />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="password" className="form-label">Password</label>
+                <input type="password" id="password" name="password" className="form-control" required />
+              </div>
+              <div className="d-grid bt-bg">
+                <button type="submit" className="btn btn-secondary btn-lg w-100">Login</button>
+              </div>
+            </form>
           </div>
         </div>
-      </section>
-        </div>
-    );
-}
+      </div>
+    </section>
+  );
+};
 
-export default Home;
+export default LoginForm;

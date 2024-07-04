@@ -11,22 +11,27 @@ th, td {
     padding: 12px;
     text-align: center;
     border: 1px solid #0a0909;
-
+}
+.profiletable{
+    margin-top: 160px;
 }
 th {
-    background-color: #ff1616;
+    background-color:  hsl(343.59deg 73.56% 34.12%);
     color: #fff;
 }
 .header {
     margin-top: 0px;
     margin-bottom: 20px;
-    background: #000;
+    background: #fff;
     padding: 20px;
     }
 
-    
+    .d-flex.justify-content-center a.btn-primary {
+        background-color: rgb(151 23 58) !important;
+        border-color: rgb(151 23 58) !important;
+    }
 .logoout button {
-    background: #ff1616;
+    background: hsl(343.59deg 73.56% 34.12%);
     border: 0;
     border-radius: 5px;
     padding: 10px 40px;

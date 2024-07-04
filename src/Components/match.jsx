@@ -3,11 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { MdNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import './statementStyle.css';
+import Header from './header';
 
 const AccountStatement = () => {
   return (
-    <div className="container mt-4">
-    
+    <>
+    <Header />
+    <div className="container matchpage">
     <div className="row mt-5">
       <div className="col">
         <div className="card bg-default shadow">
@@ -120,7 +122,7 @@ const AccountStatement = () => {
       </div>
     </div>
     </div>
-  
+    </>
   );
 };
 

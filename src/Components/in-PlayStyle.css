@@ -10,6 +10,15 @@
     margin: 0rem auto 1rem;
     padding: 0 1rem;
 }
+.match-sec{
+  margin-top: 120px;
+}
+.changeForm{
+  margin-top: 160px;
+}
+.gameMatch{
+margin-top: 180px;
+}
   
   /* Article styles */
   article {
@@ -62,7 +71,8 @@
   border: 1px solid #8898aa;
 }
 .p2-bg{
-  background-color: #FF1616;
+  background-color: hsl(343.59deg 73.56% 34.12%);
+  border-radius: 5px;
 }
 .hero_area__topslider-cardbody h6{
   color: #fff;
@@ -76,6 +86,23 @@
 .fs-eight {
     font-size: 12px;
     line-height: 130%;
+}
+.bt-bg button{
+  background:  hsl(343.59deg 73.56% 34.12%);
+  color: #fff;
+}
+.bt-bg:hover button{
+  background:  hsl(343.59deg 73.56% 34.12%);
+  color: #fff;
+}
+.logos  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.form_sec form {
+  background: #fff;
 }
   /* Media queries for responsive design */
   @media (max-width: 768px) {

@@ -2,6 +2,7 @@ import React from 'react';
 import './manual-gamesStyle.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FiPlayCircle } from "react-icons/fi";
+import Header from './header';
 
 const VideoSection = ({ thumbnail, link }) => {
   const handleVideoClick = () => {
@@ -10,7 +11,9 @@ const VideoSection = ({ thumbnail, link }) => {
   };
 
   return (
-    <div className="col-6 col-md-6 col-lg-3 mb-4">
+    <>
+    <Header />
+    <div className="col-6 col-md-6 col-lg-3 mb-4 gameThumbnail">
       <div className="video-container" onClick={handleVideoClick}>
         <img
           src={thumbnail}
@@ -22,6 +25,7 @@ const VideoSection = ({ thumbnail, link }) => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
@@ -56,7 +60,7 @@ function App() {
       </div>
       <div className="mt-4">
         <div className="d-flex justify-content-center">
-          <a href="/home" className="btn btn-primary btn-lg w-100" style={{ backgroundColor: '#ff1616', borderColor: '#ff1616' }}>Back to Main Menu</a>
+          <a href="/index" className="btn btn-primary btn-lg w-100" style={{ backgroundColor: '#ff1616', borderColor: '#ff1616' }}>Back to Main Menu</a>
         </div>
       </div>
     </div>

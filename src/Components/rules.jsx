@@ -1,8 +1,11 @@
 import React from 'react';
 import './rulesStyle.css'
+import Header from './header';
 
 function TermsAndConditions() {
   return (
+    <>
+    <Header />
     <main className="wrap1">
       <section className="container1">
         <div className="container__heading1">
@@ -17,11 +20,12 @@ function TermsAndConditions() {
         </div>
         <div className="mt-4">
         <div className="d-flex justify-content-center">
-          <a href="/home" className="btn btn-primary btn-lg w-100" style={{ backgroundColor: '#ff1616', borderColor: '#ff1616' }}>Back to Main Menu</a>
+          <a href="/index" className="btn btn-primary btn-lg w-100" style={{ backgroundColor: '#ff1616', borderColor: '#ff1616' }}>Back to Main Menu</a>
         </div>
       </div>
       </section>
     </main>
+    </>
   );
 }
 

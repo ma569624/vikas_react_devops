@@ -1,14 +1,13 @@
 import React from 'react';
 import './profileStyle.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Header from './header'
 const PersonalInfoTable = () => {
   return (
+    <>
+    <Header />
     <div>
-     
-
-
-      <section className="">
+      <section className="profiletable">
         <div className="container">
           <table className="table-fill">
             <thead>
@@ -41,15 +40,15 @@ const PersonalInfoTable = () => {
             <thead>
               <tr>
                 <th colSpan="2">
-                  <a className='backto' href="/home">BACK TO MAIN MENU</a>
+                  <a className='backto' href="/index">BACK TO MAIN MENU</a>
                 </th>
               </tr>
             </thead>
           </table>
         </div>
       </section>
-
     </div>
+    </>
   );
 };
 
